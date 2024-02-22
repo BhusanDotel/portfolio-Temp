@@ -1,0 +1,322 @@
+@media screen AND (min-width: 1300px) {
+  .project-card {
+    opacity: 0;
+    transition: 0.6s;
+  }
+
+  .project-card:hover {
+    width: 450px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+  }
+}
+.project-card {
+  height: 400px;
+  width: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(91, 91, 91, 0.9);
+  cursor: pointer;
+  opacity: 0;
+}
+
+.project-name-rotated {
+  position: absolute;
+  transform: rotate(-90deg);
+  bottom: 80px;
+  right: -50px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgb(0, 0, 0);
+  width: 160px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 10px;
+  color: rgb(220, 219, 219);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+}
+.kindimnata-card {
+  animation: kindimnataProjectSlideInFromLeft 0.3s forwards 0s,
+    projectUnRotate 0.5s forwards 2s;
+}
+
+.social-media-card {
+  animation: socialMediaSlideInFromLeft 0.3s forwards 0.3s,
+    projectUnRotate 0.5s forwards 2s;
+}
+
+.aalucross-card {
+  animation: aaluCrossProjectSlideInFromLeft 0.3s forwards 0.6s,
+    projectUnRotate 0.5s forwards 2s;
+}
+
+.chatapp-card {
+  background-position: left;
+  animation: chatAppProjectSlideInFromLeft 0.3s forwards 0.9s,
+    projectUnRotate 0.5s forwards 2s;
+}
+.ytclone-card {
+  background-position: left;
+  animation: ytCloneProjectSlideInFromLeft 0.5s forwards 1.2s,
+    projectUnRotate 0.5s forwards 2s;
+}
+.weather-card {
+  animation: weatherProjectSlideInFromLeft 0.3s forwards 1.5s,
+    projectUnRotate 0.5s forwards 2s;
+}
+
+@keyframes kindimnataProjectSlideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    transform: rotate(-10deg);
+  }
+}
+@keyframes socialMediaSlideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    transform: rotate(30deg);
+  }
+}
+@keyframes aaluCrossProjectSlideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    transform: rotate(55deg);
+  }
+}
+@keyframes chatAppProjectSlideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    transform: rotate(10deg);
+  }
+}
+@keyframes ytCloneProjectSlideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    transform: rotate(-20deg);
+  }
+}
+@keyframes weatherProjectSlideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    transform: rotate(20deg);
+  }
+}
+@keyframes projectUnRotate {
+  0% {
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.project-card-big {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(122, 122, 122, 0.9);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.project-card-data {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  padding: 10px;
+  padding-left: 20px;
+  height: 60%;
+  width: 100%;
+  background-color: rgba(25, 25, 25, 0.772);
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: projectDataSlideInFromBottom 0.5s ease forwards;
+}
+
+@keyframes projectDataSlideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.github-icon-div {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.project-git-icon {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+.project-git-icon:active {
+  transform: scale(0.9);
+}
+.project-description {
+  font-size: 12px;
+  width: 90%;
+  color: rgb(120, 120, 120);
+}
+.project-button-container {
+  margin-top: 10px;
+}
+.live-demo-btn {
+  height: 35px;
+  width: 120px;
+  font-size: 20px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+.live-demo-btn:active {
+  transform: scale(0.9);
+}
+.hr-line {
+  width: 100%;
+  background-color: rgb(69, 69, 69);
+  margin-left: 0px;
+}
+
+@media screen AND (max-width: 1300px) {
+  .project-card {
+    height: 100px;
+    width: 100%;
+    background-position: top;
+
+    opacity: 1;
+  }
+
+  .project-card-big {
+    transition: 0.6s;
+    height: 300px;
+    width: 100%;
+  }
+  .project-name-rotated {
+    position: absolute;
+    transform: rotate(0deg);
+    bottom: 10px;
+    right: 10px;
+    font-size: 15px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+  }
+  .project-card-data {
+    row-gap: 5px;
+  }
+  .project-git-icon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .project-description {
+    font-size: 10px;
+  }
+  .project-button-container {
+    margin-top: 10px;
+  }
+  .project-name-card-data {
+    font-size: 15px;
+  }
+
+  .kindimnata-card {
+    background-position: center;
+    animation: miniScreenProjectSlideInFromLeft 0.5s forwards 0s;
+    opacity: 0;
+  }
+
+  .social-media-card {
+    animation: miniScreenProjectSlideInFromLeft 1s forwards 0.3s;
+    opacity: 0;
+  }
+
+  .aalucross-card {
+    background-position: top;
+    animation: miniScreenProjectSlideInFromLeft 1.5s forwards 0.6s;
+    opacity: 0;
+  }
+  .chatapp-card {
+    background-position: top;
+    animation: miniScreenProjectSlideInFromLeft 2s forwards 0.9s;
+    opacity: 0;
+  }
+  .ytclone-card {
+    background-position: center;
+    animation: miniScreenProjectSlideInFromLeft 2.5s forwards 1.2s;
+    opacity: 0;
+  }
+  .weather-card {
+    background-position: center;
+    animation: miniScreenProjectSlideInFromLeft 3s forwards 1.5s;
+    opacity: 0;
+  }
+
+  @keyframes miniScreenProjectSlideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}

@@ -1,0 +1,143 @@
+.about-root-container {
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.about-overview-text {
+  color: rgb(52, 52, 52);
+}
+.about-me-text {
+  width: 80%;
+  color: black;
+  margin-top: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.about-service-text {
+  margin-top: 10px;
+  color: black;
+}
+.services-container {
+  display: flex;
+  width: 100%;
+  column-gap: 30px;
+  margin-top: 40px;
+}
+.service-card {
+  background-color: rgb(35, 35, 35);
+  height: 250px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  opacity: 0;
+}
+@media screen AND (max-width: 1100px) {
+  .about-title-text {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+}
+@media screen AND (max-width: 800px) {
+  .about-root-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .about-me-text {
+    font-size: 15px;
+  }
+  .service-card {
+    height: 150px;
+    width: 100px;
+    row-gap: 10px;
+  }
+  .service-card-name {
+    font-size: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .service-card-img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.frontend-animate {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: SlideInFromLeft;
+}
+
+.backend-animate {
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: SlideInFromLeft;
+}
+
+.ui-animate {
+  animation-delay: 1s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: SlideInFromLeft;
+}
+
+.software-proto-animate {
+  animation-delay: 1.5s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: SlideInFromLeft;
+}
+@keyframes SlideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen AND (max-width: 500px) {
+  .services-container {
+    column-gap: 10px;
+  }
+  .service-card {
+    height: 130px;
+    width: 140px;
+    row-gap: 10px;
+    border-radius: 10px;
+  }
+  .service-card-name {
+    font-size: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .service-card-img {
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .about-me-text {
+    width: 100%;
+    margin-top: 10px;
+    line-height: 20px;
+  }
+}

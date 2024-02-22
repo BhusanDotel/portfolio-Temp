@@ -1,0 +1,6 @@
+.not-nav-root-container {
+  box-sizing: border-box;
+  padding-bottom: 0px;
+  background-color: rgb(220, 220, 220);
+  overflow: hidden;
+}

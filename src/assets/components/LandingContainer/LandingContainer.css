@@ -1,0 +1,115 @@
+.landing-container-root {
+  padding-top: 100px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+.m-t-c-animate {
+  min-width: 150px;
+}
+.name-text-container {
+  flex: 0.95;
+  background-color: black;
+}
+.scrollbtn-container {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media screen AND (min-width: 1100px) {
+  .name-text-container {
+    padding-left: 150px;
+  }
+}
+.m-t-c-animate {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideInFromBottom 1s ease forwards;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen AND (min-width: 1100px) {
+  .name-text-container {
+    padding-right: 250px;
+  }
+}
+.n-t-c-animate {
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: slideInFromTop 1.2s ease forwards;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-container {
+  position: absolute;
+  bottom: -10px;
+  left: 90px;
+}
+.my-dp-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+  filter: grayscale(100%) drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+}
+
+.i-c-animate {
+  transform: translateX(100%);
+  animation: slideInFromLeft 0.5s ease forwards;
+}
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen AND (max-width: 1100px) {
+  .my-dp-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen AND (max-width: 800px) {
+  .landing-container-root {
+    height: 100vh;
+  }
+  .image-container {
+    position: absolute;
+    left: 30px;
+  }
+  .my-dp-img {
+    width: 300px;
+    height: 300px;
+  }
+}

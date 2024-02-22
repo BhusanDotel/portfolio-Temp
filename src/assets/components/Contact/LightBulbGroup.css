@@ -1,0 +1,56 @@
+.bulb-main-root {
+  height: 700px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.bulb-image {
+  height: 100%;
+  width: 50px;
+  object-fit: contain;
+  object-position: center;
+}
+.download-icon {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+.bulb-and-text-container {
+  position: relative;
+}
+.light-container {
+  position: absolute;
+  margin-top: 275px;
+  margin-left: 10px;
+}
+
+.hire-me-btn {
+  position: absolute;
+  height: 50px;
+  width: 150px;
+  top: 460px;
+  font-size: 15px;
+  border-radius: 27px;
+  background: #121717;
+  border: none;
+  outline: none;
+  color: rgb(70, 68, 68);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.41);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.hire-me-btn.btn-glow {
+  box-shadow: 0px -2px 1px 0px rgba(183, 183, 2, 0.41),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.41);
+
+  color: rgb(182, 182, 11);
+}
+.hire-me-btn:active {
+  transform: scale(0.9);
+}
